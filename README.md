@@ -197,19 +197,19 @@ A <b>port</b> is a virtual point <b>where network connections start and end</b>.
 Ports are standarized across all network. Most ports are resserved for certain <b>protocols</b>. While IP addresses enable messages to go to and from specific devices, port numbers allow targeting of specific services or applications within those devices. Vastly different types of data flow to and from a computer over the same network connection. The use of ports helps computers understand what to do with the data they receive.<br>
 
 ### Bibliography
-Baeldung: <a href="https://www.baeldung.com/cs/popular-network-protocols">Popular Network Protocols</a><br>
-Kapersky: <a href="https://www.kaspersky.com/resource-center/definitions/what-is-an-ip-address">What is an IP Address - Definition and Explanation</a><br>
-Guru: <a href="https://www.guru99.com/difference-ipv4-vs-ipv6.html">IPv4 vs IPv6: What's the Difference?</a><br>
-Teltonika: <a href="https://wiki.teltonika-networks.com/view/What_is_a_Netmask%3F">What is a Netmask?</a><br>
-Ionos: <a href="https://www.ionos.com/digitalguide/server/know-how/broadcast-address/">What is a broadcast address and how does it work?</a><br>
-Keenetic: <a href="https://help.keenetic.com/hc/en-us/articles/213965789-What-is-the-difference-between-a-public-and-private-IP-address-">What is the difference between a public and a private IP address?</a><br>
-Digital Ocean: <a href="https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking">Understanding IP Addresses, Subnets, and CIDR Notatio for Networking</a><br>
-Study-ccna: <a href="https://study-ccna.com/classes-of-ip-addresses/">Classes of IP addresses</a><br>
-Fortinet: <a href="https://www.fortinet.com/resources/cyberglossary/tcp-ip">What is a Transmission Control Protocol TCP/IP Model?</a><br>
-Cloudflare: <a href="https://www.cloudflare.com/es-es/learning/ddos/glossary/user-datagram-protocol-udp/">What is User Datagram Protocol (UDP/IP)?</a><br>
-Plixer: <a href="https://www.plixer.com/blog/network-layers-explained/">The Network Layers Explained</a>
-Infoblox: <a href="https://www.infoblox.com/glossary/dhcp-server/">What is a DHCP Server?</a><br>
-Computer Hope: <a href="https://www.computerhope.com/issues/ch001358.htm">How to computers connect over the Internet?</a><br>
-Sangoma: <a href="https://www.sangoma.com/how-ip-routing-works/">How IP Routing Works</a><br>
-Lifewire: <a href="https://www.lifewire.com/what-is-a-default-gateway-817771">What Is a Default Gateway in Networking?</a><br>
-Cloudflare: <a href="https://www.cloudflare.com/es-es/learning/network-layer/what-is-a-computer-port/">What is a computer port? Ports in networking</a><br>
+<b>Baeldung:</b> <a href="https://www.baeldung.com/cs/popular-network-protocols">Popular Network Protocols</a><br>
+<b>Kapersky:</b> <a href="https://www.kaspersky.com/resource-center/definitions/what-is-an-ip-address">What is an IP Address - Definition and Explanation</a><br>
+<b>Guru:</b> <a href="https://www.guru99.com/difference-ipv4-vs-ipv6.html">IPv4 vs IPv6: What's the Difference?</a><br>
+<b>Teltonika:</b> <a href="https://wiki.teltonika-networks.com/view/What_is_a_Netmask%3F">What is a Netmask?</a><br>
+<b>Ionos:</b> <a href="https://www.ionos.com/digitalguide/server/know-how/broadcast-address/">What is a broadcast address and how does it work?</a><br>
+<b>Keenetic:</b> <a href="https://help.keenetic.com/hc/en-us/articles/213965789-What-is-the-difference-between-a-public-and-private-IP-address-">What is the difference between a public and a private IP address?</a><br>
+<b>Digital Ocean:</b> <a href="https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking">Understanding IP Addresses, Subnets, and CIDR Notatio for Networking</a><br>
+<b>Study-ccna:</b> <a href="https://study-ccna.com/classes-of-ip-addresses/">Classes of IP addresses</a><br>
+<b>Fortinet:</b> <a href="https://www.fortinet.com/resources/cyberglossary/tcp-ip">What is a Transmission Control Protocol TCP/IP Model?</a><br>
+<b>Cloudflare:</b> <a href="https://www.cloudflare.com/es-es/learning/ddos/glossary/user-datagram-protocol-udp/">What is User Datagram Protocol (UDP/IP)?</a><br>
+<b>Plixer:</b> <a href="https://www.plixer.com/blog/network-layers-explained/">The Network Layers Explained</a><br>
+<b>Infoblox:</b> <a href="https://www.infoblox.com/glossary/dhcp-server/">What is a DHCP Server?</a><br>
+<b>Computer Hope:</b> <a href="https://www.computerhope.com/issues/ch001358.htm">How to computers connect over the Internet?</a><br>
+<b>Sangoma:</b> <a href="https://www.sangoma.com/how-ip-routing-works/">How IP Routing Works</a><br>
+<b>Lifewire:</b> <a href="https://www.lifewire.com/what-is-a-default-gateway-817771">What Is a Default Gateway in Networking?</a><br>
+<b>Cloudflare:</b> <a href="https://www.cloudflare.com/es-es/learning/network-layer/what-is-a-computer-port/">What is a computer port? Ports in networking</a><br>
