@@ -126,7 +126,7 @@ While TCP/IP is the newer model, the <b>Open Systems Interconnection (OSI)</b> m
     <li><b>Presentation</b> --> ASCII, PNG</li>
     <li><b>Application</b> --> SNMP, HTTP, FTP</li>
 </ol>
-The <b>TCP/IP model</b> is a more concise framework, with only 4 layers:</b>
+The <b>TCP/IP model</b> is a more concise framework, with only 4 layers</b>:
 <ol>
     <li><b>Network Access</b></li>
     <li><b>Internet</b></li>
@@ -141,6 +141,7 @@ A <b>DHCP Server</b> is a network sever that automatically provides and assigns 
 A DHCP server automatically sends the required network parameters for clients to propertly communicate on the network. Without it, the network administrator has to manually set up every client that joins the network, which can be cumbersome, especially in large networks. DHCP servers usually assign each client with a unique dynamic IP address, which changes when the client's lease for that IP address has expired.<br>
 
 ### What is a DNS server and the DNS protocol?
+The <b>Domain Name System (DNS)</b> is the phonebook of the Internet. When users type domain names such as "google.com" into web browsers, DNS is responsible for finding the correct IP address for those sites. Browsers then use those addresses to communicate with origin servers or CDN edge servers to access website information. This all happens thanks to DNS servers: machines dedicated to answering DNS queries.<br>
 
 ### What are the rules to make 2 devices communicate using IP addresses?
 
@@ -150,8 +151,6 @@ A DHCP server automatically sends the required network parameters for clients to
 
 ### What is a port from an IP point of view and what is it used for when connecting to another device?
 
-### Extra information
-IP addresses are not random. They are mathematically produced and allocated by the Internet Assigned Numbers Authority (IANA), a division of the Internet Corporation for Assigned Names and Numbers (ICANN). ICANN is a non-profit organization that was established in the United States in 1998 to help maintain the security of the Internet and allow it to be usable by all.
 
 ### Bibliography
 Kapersky: <a href="https://www.kaspersky.com/resource-center/definitions/what-is-an-ip-address">What is an IP Address - Definition and Explanation</a><br>
