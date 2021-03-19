@@ -6,6 +6,9 @@ Unlike other projects, where we have to code, now we have to read and study ever
 Since this is not a coding project, I have read a lot of documentation that I want to put here so that you can study it too. I have to write a lot of things, so I apologize if I have some spelling errors, I am Spanish. :)
 At the end of the explanation you will have some resources to continue studying networks. Most of them are the ones that I have read to prepare for my exam.
 
+### Concepts you should know before starting...
+#### What is a Network?
+
 ### What is an IP address?
 An IP address is <b>a unique address that identifies a device on the Internet or a local network.</b> IP stands for "Internet Protocol", which is the set of rules governing the format of data sent via the internet or local network. In essence, IP addresses are the identifiers that allows information to be sent between devices on a network: they contain location information and make devices accessible for communication. The Internet needs a way to differentiate between different computers, routers and websites.<br>
 <br>
@@ -70,13 +73,13 @@ A system called <b>Classless Inter-Domain Routing, or CIDR,</b> was developed as
 
 ### What are the differences between public and private IPs?
 All IPv4 addresses can be divided into two major groups: <b>global and private.</b> Global (or public, external) addresses can also be called <b>WAN addresses</b>, and they are used on the Internet. Private (or local, internal) addresses are used in the <b>local network (LAN)</b>.
-##### Public IP addresses
+#### Public IP addresses
 These are public addresses that are used on the Internet. <b>A public IP address is an IP address that is used to access the Internet.</b> Public IP addresses can be routed on the Internet, unlike private addresses. The presence of a public IP address on you router or computer will allow you to organize your own server, remote access to your computer, video surveillance cameras, and get access to them from anywhere on the global network.<br>
 With a public IP address, you can set up any home server to publish it on the Internet: Web, VPN, FTP, etc.<br>
 <br>
 For home users, an ISP can provide one or more public IP addresses. Due to the limited number of public IP addresses and the increasing number of Internet users, ISPs are now more common to give private IP addresses to subscribers.
 
-##### Private IP addresses
+#### Private IP addresses
 <b>Private addresses are not routed on the Internet and no traffic can be sent to them from the Internet</b>, they only supposed to work within the local network. Private addresses include IP addresses from the following subnets:
 <ul>
     <li>Range from 10.0.0.0 to 10.255.255.255 ---> Network: 10.0.0.0     Mask: 255.0.0.0 or /8</li>
@@ -144,13 +147,29 @@ A DHCP server automatically sends the required network parameters for clients to
 The <b>Domain Name System (DNS)</b> is the phonebook of the Internet. When users type domain names such as "google.com" into web browsers, <b>DNS is responsible for finding the correct IP address for those sites.</b> Browsers then use those addresses to communicate with origin servers or CDN edge servers to access website information. This all happens thanks to DNS servers: machines dedicated to answering DNS queries.<br>
 
 ### What are the rules to make 2 devices communicate using IP addresses?
+Using the Internet, computers connect and communicate with one another, primarily using the <b>TCP/IP</b>. Think of TCP/IP as a book of rules, a step-by-step guide that each computer uses to know how to talk to another computer. This book of rules dictates what each computer must do to transmit data, when to transmit data and how to transmit that data. It also state how to receive data in the same manner. If the rules are not followed, the computer can't connect to another computer, nor send and receive data between other computers.<br>
+To connect to the Internet and other computers on a network, a computer mush have a <b>NIC (network interface card)</b> installed. A network cable plugged into the NIC on one end and plugged into a cable modem, DSL modem, router, or switch can allow a computer to access the Internet and connect to other computers.<br>
+<br>
+#### ISPs (Internet Service Providers)
+<b>ISPs</b>, the companies that provide Internet service and connectivity, also follow these rules. The ISP provides a bridge between your computer and all the other computers in the world on the Internet. The ISP uses the TCP/IP protocols to make computer-to-computer connections possible and transmit data between them. <b>An ISP assigns an IP address.</b><br>
+#### Home network
+If you have a home computer network, the computers are also using TCP/IP to connect. The TCP/IP protocol allows each computer to see the other computers on the network, and share files and printers. When computers connect on the same network, it is called a <b>local area network, or LAN</b>. When multiple networks are connected, it is called a <b>wide area network, or WAN</b>. With this type of network, your home has a network router that connects to your ISP. The router is given the IP address for your connection to the Internet and the assigns local IP addresses to each device in your network.<br>
+When accessing a local computer in your network, you router sends your TCP/IP packets between the local IP addresses. However, when you want to connect to the Internet, your router uses the IP address assigned by the ISP.<br>
+<br>
+When requesting information from a web page, you enter a URL that is easy to understand and remember. For your computer <b>to access the computer containing the pages,</b> that URL must be converted into an IP address, which is done with <b>DNS</b>. Once DNS has converted the URL into an IP address, the routers on the Internet will know how to route your TCP/IP packet.
 
 ### How does routing work with IP?
+<b>IP Routing</b> describes the process of <b>determining the path for data to follow</b> in order to navigate from one computer or server to another. A packet of data traverses from its source router through a web of routers across many networks until it finally reachers its destination router using a routing algorithm. The routing algorithm takes into account factors such as the size of a packet and its header to determine the <b>most efficient route to the destination</b>. When a packet has reached a router, the source and destination address of the packet are used in conjunction with a routing table to determine the next hop address. This process is repeated for the next router using its own routing table until the packet has reached its destination. Because the data is divided into packets, each packet travels independently from each other and is treated as such. As a result, each packet can be sent through a different route to the destination if necessary.
 
 ### What is a default gateway for routing?
+A <b>default gateway</b> makes it possible for devices <b>in one network</b> to communicate with devices <b>in another network</b>. If a computer, for example, requests a web page, the request goes through the default gateway before exiting the local network to reach the Internet. Think of a default gateway as an intermediate device between the local network and the Internet. The default gateway tranfers internal data to the Internet and back again.<br>
+<br>
+All the clients on a network point to a default gateway that routes their traffic. The default gateway device passes this traffic from the local subnet to devices on other subnets. The default gateway connects a local network to the Internet, although internal gateways for communication within a local network are used in corporate networks.<br>
 
 ### What is a port from an IP point of view and what is it used for when connecting to another device?
-
+A <b>port</b> is a virtual point <b>where network connections start and end</b>. Ports are software-based and managed by a computer's operating system. Each port is associated with a specific process or service. Ports allow computers to easily differentiate between different kinds of traffic: emails go to a different port than webpages, for instance, even though both reach a computer over the same Internet connection.<br>
+<br>
+Ports are standarized across all network. Most ports are resserved for certain <b>protocols</b>. While IP addresses enable messages to go to and from specific devices, port numbers allow targeting of specific services or applications within those devices. Vastly different types of data flow to and from a computer over the same network connection. The use of ports helps computers understand what to do with the data they receive.<br>
 
 ### Bibliography
 Kapersky: <a href="https://www.kaspersky.com/resource-center/definitions/what-is-an-ip-address">What is an IP Address - Definition and Explanation</a><br>
@@ -164,5 +183,7 @@ Fortinet: <a href="https://www.fortinet.com/resources/cyberglossary/tcp-ip">What
 Cloudflare: <a href="https://www.cloudflare.com/es-es/learning/ddos/glossary/user-datagram-protocol-udp/">What is User Datagram Protocol (UDP/IP)?</a><br>
 Plixer: <a href="https://www.plixer.com/blog/network-layers-explained/">The Network Layers Explained</a>
 Infoblox: <a href="https://www.infoblox.com/glossary/dhcp-server/">What is a DHCP Server?</a><br>
-
-
+Computer Hope: <a href="https://www.computerhope.com/issues/ch001358.htm">How to computers connect over the Internet?</a><br>
+Sangoma: <a href="https://www.sangoma.com/how-ip-routing-works/">How IP Routing Works</a><br>
+Lifewire: <a href="https://www.lifewire.com/what-is-a-default-gateway-817771">What Is a Default Gateway in Networking?</a><br>
+Cloudflare: <a href="https://www.cloudflare.com/es-es/learning/network-layer/what-is-a-computer-port/">What is a computer port? Ports in networking</a><br>
