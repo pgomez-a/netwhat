@@ -141,7 +141,7 @@ A <b>DHCP Server</b> is a network sever that automatically provides and assigns 
 A DHCP server automatically sends the required network parameters for clients to propertly communicate on the network. Without it, the network administrator has to manually set up every client that joins the network, which can be cumbersome, especially in large networks. DHCP servers usually assign each client with a unique dynamic IP address, which changes when the client's lease for that IP address has expired.<br>
 
 ### What is a DNS server and the DNS protocol?
-The <b>Domain Name System (DNS)</b> is the phonebook of the Internet. When users type domain names such as "google.com" into web browsers, DNS is responsible for finding the correct IP address for those sites. Browsers then use those addresses to communicate with origin servers or CDN edge servers to access website information. This all happens thanks to DNS servers: machines dedicated to answering DNS queries.<br>
+The <b>Domain Name System (DNS)</b> is the phonebook of the Internet. When users type domain names such as "google.com" into web browsers, <b>DNS is responsible for finding the correct IP address for those sites.</b> Browsers then use those addresses to communicate with origin servers or CDN edge servers to access website information. This all happens thanks to DNS servers: machines dedicated to answering DNS queries.<br>
 
 ### What are the rules to make 2 devices communicate using IP addresses?
 
