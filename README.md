@@ -66,7 +66,7 @@ We determine the network portion of the address by applying a bitwise AND operat
     
 This can be expressed as <>192.168.0.0</b>. The host specification is then the difference between these original value and the host portion. In our case, the host is <b>0000 1111</b> or <b>15</b>.<br>
 <br>
-A system called <b>Classless Inter-Domain Routing, or CIDR,</b> was developed as an alternative to traditional subneting. The idea is that you can add a specification in the IP address itself as to the number of significant bits that make up the routing or networking portion. For example, we could express the idea that the IP address <b>192.168.0.15</b> is associated with the netmask <b>255.255.255.0</b> by using the CIDR notation of <b>192.168.0.15/24. This means that the first 24 bits of the IP address are considered significant for the network routing.
+A system called <b>Classless Inter-Domain Routing, or CIDR,</b> was developed as an alternative to traditional subneting. The idea is that you can add a specification in the IP address itself as to the number of significant bits that make up the routing or networking portion. For example, we could express the idea that the IP address <b>192.168.0.15</b> is associated with the netmask <b>255.255.255.0</b> by using the CIDR notation of <b>192.168.0.15/24.</b> This means that the first 24 bits of the IP address are considered significant for the network routing.
 
 ### What are the differences between public and private IPs?
 All IPv4 addresses can be divided into two major groups: <b>global and private.</b> Global (or public, external) addresses can also be called <b>WAN addresses</b>, and they are used on the Internet. Private (or local, internal) addresses are used in the <b>local network (LAN)</b>.
@@ -118,3 +118,4 @@ Guru: <a href="https://www.guru99.com/difference-ipv4-vs-ipv6.html">IPv4 vs IPv6
 Teltonika: <a href="https://wiki.teltonika-networks.com/view/What_is_a_Netmask%3F">What is a Netmask?</a><br>
 Ionos: <a href="https://www.ionos.com/digitalguide/server/know-how/broadcast-address/">What is a broadcast address and how does it work?</a><br>
 Keenetic: <a href="https://help.keenetic.com/hc/en-us/articles/213965789-What-is-the-difference-between-a-public-and-private-IP-address-">What is the difference between a public and a private IP address?</a><br>
+Digital Ocean: <a href="https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking">Understanding IP Addresses, Subnets, and CIDR Notatio for Networking</a>
