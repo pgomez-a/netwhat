@@ -8,6 +8,30 @@ At the end of the explanation you will have some resources to continue studying 
 
 ### Concepts you should know before starting...
 #### What is a Network?
+A network consists of two or more computers that are linked in order to <b>share resources, exchange files or allow electronic communications</b>. The computers on a network may be linked through cables, telephone lines, radio waves, satellites, or infrared light beams. Two very common types of networks include:
+<ul>
+    <li><b>Local Area Network (LAN)</b></li>
+    <li><b>Wide Area Network (WAN)</b></li>
+</ul>
+
+#### What is a protocol?
+To ensure efficient and secure communication within networks, may protocols were designed. <b>A protocol is a set of rules that define how communications occurs in a network</b>. Essentially, it allows connected devices to communicate with each other, regardless of any differences in their internal processes, structure or design. We can easily communicate with people all over the world by using various network protocols, and thus it plays a critical role in modern digital communications.
+
+### What are some of the most common protocols?
+<ul>
+    <li><b>Ethernet:</b> is a protocol made for <b>LAN</b>. The Ethernet protocol defines the physical layer in wired networking models, as well as the medium access control <b>(MAC)</b> sub-layer of the data link layer.</li>
+    <li><b>Internet Protocol (IP):</b> this protocol is responsible for addressing and fragmenting data packets in digital networks. Its goal is to ensure the successful delivery of packets from source to destination.</li>
+    <li><b>Internet Control Message Protocol (ICMP):</b> is made to send error messages in a network. It helps to diagnose network communication issues.</li>
+    <li><b>Address Resolution Protocol (ARP):</b> it maps network addresses to the physical addresses used by a data link protocol. It is the process of finding and address of a computer in a entwork.</li>
+    <li><b>Transmission Control Protocol (TCP):</b> is a standard that defines how to establish and maintain a network connection through which application programs can exchange date.</li>
+    <li><b>User Datagram Protocol (UDP):</b> is a transport layer protocol used for communicating through Internet networks for time-sensitive transmissions.</li>
+    <li><b>Hypertext Transfer Protocol (HTTP):</b> is the protocol helping applications to communicate with the users.</li>
+    <li><b>Dynamic Host Configuration (DHCP):</b> this protocol works on IP networks, assigning IP addresses to devices and hosts connected to the network.</li>
+    <li><b>Spanning Tree Protocol (STP):</b> eliminates redundant links and process network changes and failures.</li>
+    <li><b>File Transfer Protocol (FTP):</b> is used to transfer files from one server to another. It is responsible for the reliably and efficient transfer of files.</li>
+    <li><b>Secure Shell (SSH):</b> is a network protocol that uses cryptography in order to secure network services over unsecured networks.</li>
+    <li><b>SSH File Transfer Protocol (SFTP):</b> is used to secure the connection when a file is sent remotely from one system to another.</li>
+</ul>
 
 ### What is an IP address?
 An IP address is <b>a unique address that identifies a device on the Internet or a local network.</b> IP stands for "Internet Protocol", which is the set of rules governing the format of data sent via the internet or local network. In essence, IP addresses are the identifiers that allows information to be sent between devices on a network: they contain location information and make devices accessible for communication. The Internet needs a way to differentiate between different computers, routers and websites.<br>
@@ -172,6 +196,7 @@ A <b>port</b> is a virtual point <b>where network connections start and end</b>.
 Ports are standarized across all network. Most ports are resserved for certain <b>protocols</b>. While IP addresses enable messages to go to and from specific devices, port numbers allow targeting of specific services or applications within those devices. Vastly different types of data flow to and from a computer over the same network connection. The use of ports helps computers understand what to do with the data they receive.<br>
 
 ### Bibliography
+Baeldung: <a href="https://www.baeldung.com/cs/popular-network-protocols">Popular Network Protocols</a><br>
 Kapersky: <a href="https://www.kaspersky.com/resource-center/definitions/what-is-an-ip-address">What is an IP Address - Definition and Explanation</a><br>
 Guru: <a href="https://www.guru99.com/difference-ipv4-vs-ipv6.html">IPv4 vs IPv6: What's the Difference?</a><br>
 Teltonika: <a href="https://wiki.teltonika-networks.com/view/What_is_a_Netmask%3F">What is a Netmask?</a><br>
