@@ -65,11 +65,23 @@ We determine the network portion of the address by applying a bitwise AND operat
     1100 0000 . 1010 1000 . 0000 0000 . 0000 0000
 
 ### What are the differences between public and private IPs?
-The are different categories of IP addresses, and within each category different types. This time, we are going to focus on public and private IPs:
+All IPv4 addresses can be divided into two major groups: <b>global and private.</b> Global (or public, external) addresses can also be called <b>WAN addresses</b>, and they are used on the Internet. Private (or local, internal) addresses are used in the <b>local network (LAN)</b>.
+##### Public IP addresses
+These are public addresses that are used on the Internet. <b>A public IP address is an IP address that is used to access the Internet.</b> Public IP addresses can be routed on the Internet, unlike private addresses. The presence of a public IP address on you router or computer will allow you to organize your own server, remote access to your computer, video surveillance cameras, and get access to them from anywhere on the global network.<br>
+With a public IP address, you can set up any home server to publish it on the Internet: Web, VPN, FTP, etc.<br>
+<br>
+For home users, an ISP can provide one or more public IP addresses. Due to the limited number of public IP addresses and the increasing number of Internet users, ISPs are now more common to give private IP addresses to subscribers.
+
+##### Private IP addresses
+<b>Private addresses are not routed on the Internet and no traffic can be sent to them from the Internet</b>, they only supposed to work within the local network. Private addresses include IP addresses from the following subnets:
 <ul>
-  <li>Private IP addresses: every device that connects to your Internet network has a private IP address. This includes </li>
-  
+    <li>Range from 10.0.0.0 to 10.255.255.255 ---> Network: 10.0.0.0     Mask: 255.0.0.0 or /8</li>
+    <li>Range from 172.16.0.0 to 172.31.255.255 ---> Network: 172.16.0.0     Mask: 255.240.0.0 or /12</li>
+    <li>Range from 192.168.0.0 to 192.168.255.255 ---> Network: 192.168.0.0     Mask: 255.255.0.0 or /16</li>
 </ul>
+Those are <b>reserved</b> IP addresses. These addresses are intended for use in closed local area networks and the allocation of such addresses is not globally controlled by anyone. Direct access to the Internet from a private IP address is not possible. In this case, the connection to the Internet must go through <b>NAT (Network Address Translation replaces the private IP address with a public one)</b>. Private IP addresses within the same local network must be unique and cannot duplicate.<br>
+<br>
+As far as Internet security is concerned, the use of a <b>private IP address is more secure than the use of a public IP address</b>, as private IP addresses are not directly visible on the Internet and are located behind NAT, which also ensures the security of the home network. When using a public IP address, measures are required to provide additional security for the computer or server that are exposing their services to the Internet (e.g. firewalls).
 
 ### What is a class of IP addresses?
 
@@ -101,3 +113,4 @@ Kapersky: <a href="https://www.kaspersky.com/resource-center/definitions/what-is
 Guru: <a href="https://www.guru99.com/difference-ipv4-vs-ipv6.html">IPv4 vs IPv6: What's the Difference?</a><br>
 Teltonika: <a href="https://wiki.teltonika-networks.com/view/What_is_a_Netmask%3F">What is a Netmask?</a><br>
 Ionos: <a href="https://www.ionos.com/digitalguide/server/know-how/broadcast-address/">What is a broadcast address and how does it work?</a><br>
+Keenetic: <a href="https://help.keenetic.com/hc/en-us/articles/213965789-What-is-the-difference-between-a-public-and-private-IP-address-">What is the difference between a public and a private IP address?</a><br>
