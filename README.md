@@ -110,12 +110,35 @@ TCP organizes data so that it can be transmitted between <b>a server and a clien
 As a result, <b>TCP is used to transmit data from high-level protocols that need all data to arrive</b>. These include peer-to-peer sharing protocols like <b>File Transfer Protocol (FTP), Secure Shell (SSH), and Telnet</b>. It is also used to send and receive email through <b>Internet Message Access Protocol (IMAP), Post Office Protocol (POP), and Simple Mail Transfer Protocol (SMTP)</b> and for web access through the <b>Hypertext Transfer Protocol (HTTP)</b>.<br>
 
 ### What is UDP?
+The User Datagram Protocol, or UDP, is a communication protocol used across the Internet for especially time-sensitive transmissions such as video playback or DNS lookups. It speeds up communications by not formally establishing a connection before data is transferred. This allows data to be transferred very quickly, but it can also cause packets to become lost in transit.<br>
+Like all networking protocols, UDP is a standarized method for transfering data between two computers in a network. Compared to other protocols, UDP accomplishes this process in a simple fashion: it sends packets (units of data transmission) directly to a target computer, without establishing a connection first, indicating the order of said packets, or checking whether they arrived as intended. <b>UDP packets are referred to as "datagrams"</b>.
 
-### What are the network layers?
-
-### What is the OSI model?
+### What are the network layers? What is the OSI model?
+In computer science, the concept of network layers is a framework that helps to understand complex network interactions. There are two models that are widely referenced today: <b>OSI and TCP/IP</b>. The concepts are similar, but layers themselves differ between the two models.<br>
+<br>
+While TCP/IP is the newer model, the <b>Open Systems Interconnection (OSI)</b> model is still referenced a lot to describe network layers. The <b>OSI model</b> was developed by the <b>International Organization of Standarization</b>. There are 7 layers:
+<ol>
+    <li><b>Physical</b> --> cable</li>
+    <li><b>Data Link</b> --> MAC</li>
+    <li><b>Network</b> --> IP, routers</li>
+    <li><b>Transport</b> --> TCP, UDP</li>
+    <li><b>Session</b> --> Syn/Ack</li>
+    <li><b>Presentation</b> --> ASCII, PNG</li>
+    <li><b>Application</b> --> SNMP, HTTP, FTP</li>
+</ol>
+The <b>TCP/IP model</b> is a more concise framework, with only 4 layers:</b>
+<ol>
+    <li><b>Network Access</b></li>
+    <li><b>Internet</b></li>
+    <li><b>Transport</b></li>
+    <li><b>Application</b></li>
+</ol>
+<br>
+Anything that has to do with inter-network connections takes place at the network layer. This includes up the routes for data packets to take, checking to see if a server in another network is up and running, and addressing and receiving IP packets from other networks. This last process is perhaps the most important, as the vast majority of Internet traffic is sent over IP.<br>
 
 ### What is a DHCP server and the DHCP protocol?
+A <b>DHCP Server</b> is a network sever that automatically provides and assigns IP addresses, default gateway and other network parameters to client devices. It relies on the standard protocol known as <b>Dynamic Host Configuration Protocol</b> to respond to broadcast queries by clients.<br>
+A DHCP server automatically sends the required network parameters for clients to propertly communicate on the network. Without it, the network administrator has to manually set up every client that joins the network, which can be cumbersome, especially in large networks. DHCP servers usually assign each client with a unique dynamic IP address, which changes when the client's lease for that IP address has expired.<br>
 
 ### What is a DNS server and the DNS protocol?
 
@@ -138,5 +161,9 @@ Ionos: <a href="https://www.ionos.com/digitalguide/server/know-how/broadcast-add
 Keenetic: <a href="https://help.keenetic.com/hc/en-us/articles/213965789-What-is-the-difference-between-a-public-and-private-IP-address-">What is the difference between a public and a private IP address?</a><br>
 Digital Ocean: <a href="https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking">Understanding IP Addresses, Subnets, and CIDR Notatio for Networking</a><br>
 Study-ccna: <a href="https://study-ccna.com/classes-of-ip-addresses/">Classes of IP addresses</a><br>
-Fortinet: <a href="https://www.fortinet.com/resources/cyberglossary/tcp-ip">What is a Transmission Control Protocol TCP/IP Model?</a>
+Fortinet: <a href="https://www.fortinet.com/resources/cyberglossary/tcp-ip">What is a Transmission Control Protocol TCP/IP Model?</a><br>
+Cloudflare: <a href="https://www.cloudflare.com/es-es/learning/ddos/glossary/user-datagram-protocol-udp/">What is User Datagram Protocol (UDP/IP)?</a><br>
+Plixer: <a href="https://www.plixer.com/blog/network-layers-explained/">The Network Layers Explained</a>
+Infoblox: <a href="https://www.infoblox.com/glossary/dhcp-server/">What is a DHCP Server?</a><br>
+
 
