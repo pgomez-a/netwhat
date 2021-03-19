@@ -63,6 +63,10 @@ This can be written in the normal IPv4 format as 255.255.255.0. Any bit that is 
 We determine the network portion of the address by applying a bitwise AND operatoin between the address and the netmask. A bitwise AND operation will basically save the networking portion of the address and discard the host portion. The result of this on our above example that represent our network is:
 
     1100 0000 . 1010 1000 . 0000 0000 . 0000 0000
+    
+This can be expressed as <>192.168.0.0</b>. The host specification is then the difference between these original value and the host portion. In our case, the host is <b>0000 1111</b> or <b>15</b>.<br>
+<br>
+A system called <b>Classless Inter-Domain Routing, or CIDR,</b> was developed as an alternative to traditional subneting. The idea is that you can add a specification in the IP address itself as to the number of significant bits that make up the routing or networking portion. For example, we could express the idea that the IP address <b>192.168.0.15</b> is associated with the netmask <b>255.255.255.0</b> by using the CIDR notation of <b>192.168.0.15/24. This means that the first 24 bits of the IP address are considered significant for the network routing.
 
 ### What are the differences between public and private IPs?
 All IPv4 addresses can be divided into two major groups: <b>global and private.</b> Global (or public, external) addresses can also be called <b>WAN addresses</b>, and they are used on the Internet. Private (or local, internal) addresses are used in the <b>local network (LAN)</b>.
