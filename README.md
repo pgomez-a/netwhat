@@ -88,8 +88,26 @@ Those are <b>reserved</b> IP addresses. These addresses are intended for use in 
 As far as Internet security is concerned, the use of a <b>private IP address is more secure than the use of a public IP address</b>, as private IP addresses are not directly visible on the Internet and are located behind NAT, which also ensures the security of the home network. When using a public IP address, measures are required to provide additional security for the computer or server that are exposing their services to the Internet (e.g. firewalls).
 
 ### What is a class of IP addresses?
+TCP/IP defines five classes of IP addresses: <b>class A, B, C, D and E.</b> Each class has a range of valid IP addresses. The value of the first octet determines the class. IP addresses from the first three classes (A, B and C) can be used for host addresses. The other two classes are used for other purposes: class D for <b>multicast</b> and class E for <b>experimental purposes.</b><br>
+The system of IP address classes was developed for the purpose of Internet IP addresses assignment. The classes created were based on the network size. For example, for the small number of networks with a very large number of hosts, the <b>class A</b> was created. The <b>class C</b> was created for numerous networks with small number of hosts. Classes of IP addresses are:
+
+CLASS     | FIRST OCTET VALUE | SUBNET MASK
+:-------- | :---------------- | :-----------
+A         | 0 - 126           | 8
+B         | 128 - 191         | 16
+C         | 192 - 223         | 24
+D         | 224 - 239         | -
+E         | 240 - 255         | -
+
+For the IP addresses for Class A, the first 8 bits represent the network part, while the remaining 24 bits represent the host part. For class B, the first 16 bits represent the network part, while the remaining 16 bits represent the host part. FOor Class C, the first 24 bits represent the network part, while the remaining 8 bits represent the host part.
 
 ### What is TCP?
+<b>Transmission Control Protocol (TCP)</b> is a communications standard that enables application programs and computing devices to exchange messages over a network. It is designed to send packets across the Internet and <b>ensure the successful delivery of data and messages</b> over networks.<br>
+TCP is one of the basic standards that define the rules of the Internet and is included within the standards defined by the Internet Engineering Task Force (IETF). It is one of the most commonly used protocols withing digital network communications and <b>ensures end-to-end data delivery.</b><br>
+<br>
+TCP organizes data so that it can be transmitted between <b>a server and a client</b>. It guarantees the integrity of the data being communicated over a network. Before it transmits data, TCP establishes a connection between a source and its destination, which it ensures remains live until communicatoin begins. It then breaks large amounts of data into smaller packets, while ensuring data integrity is in place throughout the process.<br>
+<br>
+As a result, <b>TCP is used to transmit data from high-level protocols that need all data to arrive</b>. These include peer-to-peer sharing protocols like <b>File Transfer Protocol (FTP), Secure Shell (SSH), and Telnet</b>. It is also used to send and receive email through <b>Internet Message Access Protocol (IMAP), Post Office Protocol (POP), and Simple Mail Transfer Protocol (SMTP)</b> and for web access through the <b>Hypertext Transfer Protocol (HTTP)</b>.<br>
 
 ### What is UDP?
 
@@ -118,4 +136,7 @@ Guru: <a href="https://www.guru99.com/difference-ipv4-vs-ipv6.html">IPv4 vs IPv6
 Teltonika: <a href="https://wiki.teltonika-networks.com/view/What_is_a_Netmask%3F">What is a Netmask?</a><br>
 Ionos: <a href="https://www.ionos.com/digitalguide/server/know-how/broadcast-address/">What is a broadcast address and how does it work?</a><br>
 Keenetic: <a href="https://help.keenetic.com/hc/en-us/articles/213965789-What-is-the-difference-between-a-public-and-private-IP-address-">What is the difference between a public and a private IP address?</a><br>
-Digital Ocean: <a href="https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking">Understanding IP Addresses, Subnets, and CIDR Notatio for Networking</a>
+Digital Ocean: <a href="https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking">Understanding IP Addresses, Subnets, and CIDR Notatio for Networking</a><br>
+Study-ccna: <a href="https://study-ccna.com/classes-of-ip-addresses/">Classes of IP addresses</a><br>
+Fortinet: <a href="https://www.fortinet.com/resources/cyberglossary/tcp-ip">What is a Transmission Control Protocol TCP/IP Model?</a>
+
