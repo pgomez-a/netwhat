@@ -48,6 +48,21 @@ When organizations need additional subnetworking, subnetting divides the host el
 A special address is required to carry out this procedure, which replaces the recipient addresses in question. This broadcast IP is of particular use if the addresses of the individual network users are not known. The sender initiates the broadcast connection and provides the address at which the recipients can contact them. A broadcast works in a similar way to a mailing list: the recipients are not visible to each other and the sender has no way of knowing the addresses of the network users. Only if the users contact the sender one-to-one do they disclose their own address.
 
 ### What are the different ways to represent an ip address with the Netmask?
+Each address space is divided into a network portion and a host portion. The amount the address that each of these take up is dependent on the class that the address belongs to. For instance, for class C addresses, the first 3 octets are used to describe the network.<br>
+By default, each network has only one subnet, which contains all of the host addresses defined within. A netmask is basically a specification of the amount of address bits that are used for the network portion. A subnet maskis another netmask within used to further divide the network.<br>
+<br>
+Each bit of the address that is considered significan for describing the network should be represented as a "1" in the netmask. For instande, the address 192.168.0.15 can be expressed like this, in binary:
+
+    1100 0000 . 1010 1000 . 0000 0000 . 0000 1111
+    
+As we described above, the network portion for class C addresses is the first 3 octets, or the first 24 bits. Since these are the significant bits that we want to preserve, the netmask would be:
+
+    1111 1111 . 1111 1111 . 1111 1111 . 0000 0000
+    
+This can be written in the normal IPv4 format as 255.255.255.0. Any bit that is a "0" in the binary representation of the netmask is considered part of the host portion of the address and can be variable. The bits that are "1" are static, however, for the network or subnetwork that is being discussed.<br>
+We determine the network portion of the address by applying a bitwise AND operatoin between the address and the netmask. A bitwise AND operation will basically save the networking portion of the address and discard the host portion. The result of this on our above example that represent our network is:
+
+    1100 0000 . 1010 1000 . 0000 0000 . 0000 0000
 
 ### What are the differences between public and private IPs?
 The are different categories of IP addresses, and within each category different types. This time, we are going to focus on public and private IPs:
