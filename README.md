@@ -1,6 +1,8 @@
 # netwhat
 <img width="1925" alt="netwhat" src="https://user-images.githubusercontent.com/74931024/117972380-5cfd4580-b32b-11eb-8275-c6db4d950cc3.png">
 
+**If you want to learn more about IT topics, visit my website:** [**IA Notes**](https://ia-notes.com/)
+
 As the subject says, this project is an introduction to network problematics.
 Unlike other projects, where we have to code, now we have to read and study everything we find on the Internet about networks to end up taking an exam where we demonstrate the skills and knowledge we have acquired.
 
